@@ -1,7 +1,7 @@
 package com.hmtmcse.gsrest
 
 
-class MyFirstSpecification extends GSSpecification<MyFirstSpecification> {
+class MyFirstSpecification extends RestAPISpecification<MyFirstSpecification> {
 
 
 

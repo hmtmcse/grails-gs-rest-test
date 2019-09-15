@@ -2,7 +2,7 @@ package com.hmtmcse.gsrest
 
 import spock.lang.Specification
 
-class GSSpecification<T> extends Specification {
+class RestAPISpecification<T> extends Specification {
 
     public String apiURL = null
 
