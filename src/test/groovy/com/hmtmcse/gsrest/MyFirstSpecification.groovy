@@ -5,14 +5,39 @@ class MyFirstSpecification extends RestAPISpecification<MyFirstSpecification> {
 
 
 
-    def "bismillah Test"(){
-        expect:
-        Math.max(a, b) == c
+    def setup() {
+        this.apiURL = "http://localhost:6601/"
+    }
 
-        where:
-        a << [5, 3]
-        b << [1, 9]
-        c << [5, 9]
+    def "bismillah Test"(){
+
+        when:
+        apiRequest.getRequest("/")
+
+        then:
+        apiResponse.httpCode == 200
+
+    }
+
+
+    def "bismillah Test1"(){
+
+        when:
+        apiRequest.getRequest("/")
+
+        then:
+        apiResponse.httpCode != 200
+
+    }
+
+    def "bismillah Test2"(){
+
+        when:
+        apiRequest.getRequest("/")
+
+        then:
+        apiResponse.httpCode == 200
+
     }
 
 }
