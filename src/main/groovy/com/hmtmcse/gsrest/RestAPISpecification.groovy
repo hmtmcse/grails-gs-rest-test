@@ -4,7 +4,7 @@ import com.hmtmcse.httputil.HttpResponse
 import com.hmtmcse.httputil.HttpUtil
 import spock.lang.Specification
 
-class RestAPISpecification<T> extends Specification {
+class RestAPISpecification extends Specification {
 
     public String apiURL = null
     private HttpUtil httpUtil = null
@@ -23,12 +23,5 @@ class RestAPISpecification<T> extends Specification {
     HttpResponse getApiResponse(){
         return this.httpUtil.send()
     }
-
-    void sent(){
-        if (this.httpUtil){
-           this.httpResponse = this.httpUtil.send()
-        }
-    }
-
 
 }
