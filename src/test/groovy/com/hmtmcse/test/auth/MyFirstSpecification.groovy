@@ -1,4 +1,4 @@
-package com.hmtmcse.gsrest
+package com.hmtmcse.test.auth
 
 
 class MyFirstSpecification extends RestAPISpecification<MyFirstSpecification> {
